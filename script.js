@@ -41,3 +41,21 @@ console.log(points)
 const numbers = [10,22,33,22,334];
 numbers.sort(function(a,b){return b -a});
 console.log(numbers)
+
+
+// Sorting with DOM
+
+const point = [1,2,3,4,22,33,44,10];
+document.getElementById("demo").innerHTML = point;
+
+function myFunction(){
+    point.sort();
+    document.getElementById("demo").innerHTML = point;
+}
+function myFunction1() {
+    point.sort(function(a, b){ return a - b});
+    document.getElementById("demo").innerHTML = point;
+}
+
+console.log(point)
+console.log(point)
